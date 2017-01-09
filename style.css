@@ -1,0 +1,248 @@
+body {
+	font-family: arial, sans-serif;
+	line-height: 140%;
+	/*font-family: 'Roboto', 'Droid Sans', sans-serif;*/
+	margin: 0;
+	color: #222;
+	background: #fdfdfd;
+}
+
+a {
+	color: #D32F2F;
+	text-decoration: none;
+}
+	a:hover {
+		color: red;
+	}
+
+h1 {
+	font-weight: normal;
+	line-height: 1.4em;
+	text-align: center;
+	font-family: 'Perpetua Titling MT';
+	font-size: 3em;
+	text-transform: uppercase;
+	margin-bottom: .3em;
+}
+	h1 a {
+		font-family: arial, sans-serif;
+	}
+
+h2 {
+	font-family: 'Garamond', serif;
+}
+
+.header {
+	background: #eee;
+	text-align: center;
+	font-family: arial, sans-serif;
+	padding: 0;
+	box-shadow: 2px 0 4px grey;
+}
+	.header nav {
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+		#back-to-index {
+			float: left;
+			line-height: 3rem;
+			padding: 0 .8em;
+			border-right: 1px solid silver;
+			display: none;
+		}
+
+		#back-to-index .arrow {
+			font-size: 2.5em;
+			font-weight: bold;
+			float: left;
+			padding-right: .3em;
+			line-height: 2.5rem;
+		}
+
+		.header nav h2 {
+			margin: 0;
+			line-height: 3rem;
+			font-family: sans-serif;
+			font-weight: bold;
+			font-size: 1.2em;
+		}
+
+#book-list, 
+#bible-contents {
+	margin: 1em 2% 2em;
+}
+
+#bible-contents {
+	display: none;
+}
+
+.indice {
+	margin: 0 auto;
+}
+
+.indice ul {
+	margin: 0;
+	padding-left: 0;
+	font-size: 1.15em;
+	list-style: none;
+}
+	.indice h2 {
+		font-size: 1em;
+	}
+
+	.indice li {
+		border-bottom: 1px solid silver;
+	}
+
+	.indice li a {
+		display: block;
+		line-height: 200%;
+	}
+		.indice li a:hover {
+			background: #eee;
+		}
+
+.biblia {
+	font-family: 'Garamond', serif;
+	font-size: 1.2em;
+	position: relative;
+}
+
+	.biblia h2 {
+		text-align: center;
+		line-height: 120%;
+	}
+
+	.biblia .verse {
+		margin: .1em 0;
+		padding: .1em;
+		margin: auto;
+	}
+
+	#verse-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+		.verse {
+			line-height: 140%;
+		}
+
+		.verse:hover {
+			background: #f6f6f6;
+		}
+
+		.verse .verse-number {
+			color: #900;
+			font-family: arial, sans-serif;
+			font-size: .6em;
+			vertical-align: top;
+		}
+
+	/*.biblia .verse nav {
+		display: none;
+		width: 3em;
+		vertical-align: top;
+		font-family: arial, sans-serif;
+	}
+
+	.biblia .verse:hover nav {
+		display: inline-block;
+		text-align: right;
+	}
+
+	.verse nav .permalink {
+		font-size: 1em;
+	}*/
+
+.lista-capitulos {
+	text-align: center;
+	font-weight: bold;
+}
+	.lista-capitulos.bottom {
+		margin-top: 2em;
+	}
+	.lista-capitulos a {
+		padding: .2em .1em;
+		min-width: 25px;
+		display: inline-block;
+	}
+	.lista-capitulos a:hover {
+		background: #eee;
+		border-radius: 1em;
+	}
+	.lista-capitulos a.active {
+		background: #D32F2F;
+		border-radius: 1em;
+		color: white;
+	}
+
+.jump-chapter {
+	text-align: center;
+	font-weight: bold;
+	font-size: 3em;
+	margin: 1em 0 1.5em;
+}
+	.jump-chapter a {
+		background: #eee;
+		padding: .2em .4em;
+		border-radius: 3px;
+	}
+		.jump-chapter a:hover {
+			background: #D32F2F;
+			color: white;
+		}
+
+.star::after {
+	content: '☆'
+}
+	.star:hover::after {
+		content: '★'
+	}
+
+footer {
+	text-align: center;
+	margin-top: 1em;
+}
+	footer a.top {
+		background: #eee;
+		color: grey;
+		font-weight: bold;
+		border-radius: 5px;
+		padding: .5em 1em;
+		text-transform: uppercase;
+		box-shadow: 1px 1px 1px silver;
+		font-size: 1.1em;
+	}
+
+/*
+ * GENÉRICO
+ */
+.btn-primary {
+	border: 1px solid #D32F2F;
+	padding: .2em .3em;
+}
+	.btn-primary:hover {
+		background: #D32F2F;
+		color: white;
+	}
+.center {
+	text-align: center;
+}
+
+
+
+.flower {
+	text-align: center;
+	line-height: 300%;
+	margin-top: -2em;
+}
+
+	.flower span {
+		font-family: 'IM FELL FLOWERS 1';
+		font-size: 2.5em;
+	}
+		.flower span::before {
+			content: 'FH';
+		}

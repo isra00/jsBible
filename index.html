@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jsBible</title>
+    <meta name="description" content="Bible JS reader">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a name="top"></a>
+
+    <header class="header">
+        <nav>
+            <a href="javascript:void(0)" id="back-to-index"><span class="arrow">&lsaquo;</span> Back</a>
+            <h2 id="header-title">Jerusalem Bible</h2>
+        </nav>
+    </header>
+    
+    <section id="book-list">
+        <nav class="indice">
+            <ul>
+                <h2>Pentateuch</h2>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Gen', this)">Genesis</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Exo', this)">Exodus</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Lev', this)">Leviticus</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Num', this)">Numbers</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Deu', this)">Deuteronomy</a></li>
+                <h2>Historical</h2>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Jos', this)">Joshua</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Jdg', this)">Judges</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Rut', this)">Ruth</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('1Sa', this)">1 Samuel</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('2Sa', this)">2 Samuel</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('1Ki', this)">1 Kings</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('2Ki', this)">2 Kings</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('1Ch', this)">1 Chronicles</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('2Ch', this)">2 Chronicles</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Ezr', this)">Ezra</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Neh', this)">Nehemiah</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Tob', this)">Tobit</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Jdt', this)">Judith</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Est', this)">Esther</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('1Ma', this)">1 Maccabees</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('2Ma', this)">2 Maccabees</a></li>
+                <h2>Poetic</h2>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Job', this)">Job</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Psa', this)">Psalms</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Pro', this)">Proverbs</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Ecc', this)">Ecclesiastes</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Sol', this)">Song of Solomon</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Wis', this)">Wisdom</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Sir', this)">Sirach</a></li>
+                <h2>Prophetic</h2>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Isa', this)">Isaiah</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Jer', this)">Jeremiah</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Lam', this)">Lamentations</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Bar', this)">Baruch</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Eze', this)">Ezekiel</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Dan', this)">Daniel</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Hos', this)">Hosea</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Joe', this)">Joel</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Amo', this)">Amos</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Oba', this)">Obadiah</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Jon', this)">Jonah</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Mic', this)">Micah</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Nah', this)">Nahum</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Hab', this)">Habakkuk</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Zep', this)">Zephaniah</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Hag', this)">Haggai</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Zec', this)">Zechariah</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Mal', this)">Malachi</a></li>
+                <h2>New Testament</h2>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Mat', this)">Matthew</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Mar', this)">Mark</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Luk', this)">Luke</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Joh', this)">John</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Act', this)">Acts</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Rom', this)">Romans</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('1Co', this)">1 Corinthians</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('2Co', this)">2 Corinthians</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Gal', this)">Galatians</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Eph', this)">Ephesians</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Phi', this)">Philippians</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Col', this)">Colossians</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('1Th', this)">1 Thessalonians</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('2Th', this)">2 Thessalonians</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('1Ti', this)">1 Timothy</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('2Ti', this)">2 Timothy</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Tit', this)">Titus</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Phm', this)">Philemon</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Heb', this)">Hebrews</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Jam', this)">James</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('1Pe', this)">1 Peter</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('2Pe', this)">2 Peter</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('1Jo', this)">1 John</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('2Jo', this)">2 John</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('3Jo', this)">3 John</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Jud', this)">Jude</a></li>
+                <li><a href="javascript:void(0)" onclick="jsBible.readBook('Rev', this)">Revelation</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="bible-contents">
+
+        <nav class="lista-capitulos top" id="lista-capitulos"></nav>
+
+        <article class="biblia">
+
+            <h2 id="title-chapter">loading...</h2>
+
+            <ol id="verse-list"></ol>
+
+        </article>
+
+        <!--<nav class="jump-chapter">
+            <a href="javascript:void(0)">&larr;</a>
+            <a href="javascript:void(0)">&rarr;</a>
+        </nav>-->
+
+    </section>
+
+    <footer>
+        <a href="#top" class="top"><span>&#8593;</span> top</a>
+    </footer>
+
+    <script src="zepto.min.js"></script>
+    <script src="bible-njb.js"></script>
+    <script src="bible.js"></script>
+</body>
+</html>
