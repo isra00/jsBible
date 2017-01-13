@@ -4,12 +4,14 @@ var jsBible = {
 
 	"initializeUi": function()
 	{
+		jsBible.bibleName = document.getElementsByTagName("title")[0].innerHTML;
+
 		$(document.getElementById("back-to-index")).on('click', function(e) {
 
 			document.getElementById("book-list").style.display 		= 'block';
 			document.getElementById("bible-contents").style.display = 'none';
 			document.getElementById("back-to-index").style.display 	= 'none';
-			document.getElementById("header-title").innerHTML 		= 'Jerusalem Bible';
+			document.getElementById("header-title").innerHTML 		= jsBible.bibleName;
 		});
 	},
 
