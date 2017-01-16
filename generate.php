@@ -27,7 +27,7 @@ function packCssJs($html)
 function generateBible($bibleCode, $bibleDef)
 {
 	ob_start();
-	include 'index.tpl.php';
+	include 'skeleton/index.tpl.php';
 	$html = ob_get_contents();
 	ob_clean();
 
