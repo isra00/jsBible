@@ -32,6 +32,10 @@ var jsBible = {
 			}
 		}
 
+		$(".verse").click(function(e) {
+			$(this).toggleClass("active");
+		});
+
 		window.scrollTo(0, 0);
 	},
 

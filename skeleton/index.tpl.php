@@ -54,9 +54,7 @@
 
     </section>
 
-    <footer>
-        <a href="#top" class="top"><span>&#8593;</span> <?php echo $bibleDef['msgTop'] ?></a>
-    </footer>
+    <a href="#top" class="top"><span>&#8593;</span> <?php echo $bibleDef['msgTop'] ?></a>
 
     <script src="zepto.min.js"></script>
     <script src="bible-<?php echo $bibleCode ?>.js"></script>

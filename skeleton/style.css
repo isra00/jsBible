@@ -19,7 +19,6 @@ h1 {
 	font-weight: normal;
 	line-height: 1.4em;
 	text-align: center;
-	font-family: 'Perpetua Titling MT';
 	font-size: 3em;
 	text-transform: uppercase;
 	margin-bottom: .3em;
@@ -130,7 +129,7 @@ h2 {
 		padding: .1em 2% .1em 6px;
 		border-left: 4px solid white;
 	}
-		.verse:hover {
+		.verse.active {
 			border-left: 4px solid silver;
 			background: #f6f6f6;
 		}
@@ -142,22 +141,6 @@ h2 {
 			vertical-align: top;
 			line-height: 1.7rem;
 		}
-
-	/*.biblia .verse nav {
-		display: none;
-		width: 3em;
-		vertical-align: top;
-		font-family: arial, sans-serif;
-	}
-
-	.biblia .verse:hover nav {
-		display: inline-block;
-		text-align: right;
-	}
-
-	.verse nav .permalink {
-		font-size: 1em;
-	}*/
 
 .lista-capitulos {
 	text-align: center;
@@ -198,34 +181,23 @@ h2 {
 			color: white;
 		}
 
-.star::after {
-	content: '☆'
+a.top {
+	background: #eee;
+	color: grey;
+	font-weight: bold;
+	border-radius: 5px;
+	padding: .5em 1em;
+	text-transform: uppercase;
+	box-shadow: 1px 1px 1px silver;
+	font-size: 1.1em;
+	position: fixed;
+	right: .5em;
+	bottom: .5em;
+	opacity: .8;
 }
-	.star:hover::after {
-		content: '★'
+	a.top:hover {
+		opacity: 1;
 	}
-
-footer {
-	text-align: center;
-	margin-top: 1em;
-}
-	a.top {
-		background: #eee;
-		color: grey;
-		font-weight: bold;
-		border-radius: 5px;
-		padding: .5em 1em;
-		text-transform: uppercase;
-		box-shadow: 1px 1px 1px silver;
-		font-size: 1.1em;
-		position: fixed;
-		right: .5em;
-		bottom: .5em;
-		opacity: .8;
-	}
-		a.top:hover {
-			opacity: 1;
-		}
 
 /*
  * GENÉRICO
@@ -241,19 +213,3 @@ footer {
 .center {
 	text-align: center;
 }
-
-
-
-.flower {
-	text-align: center;
-	line-height: 300%;
-	margin-top: -2em;
-}
-
-	.flower span {
-		font-family: 'IM FELL FLOWERS 1';
-		font-size: 2.5em;
-	}
-		.flower span::before {
-			content: 'FH';
-		}
