@@ -12,6 +12,7 @@ var jsBible = {
 			document.getElementById("bible-contents").style.display = 'none';
 			document.getElementById("back-to-index").style.display 	= 'none';
 			document.getElementById("header-title").innerHTML 		= jsBible.bibleName;
+			document.getElementsByTagName("title")[0].innerHTML 	= jsBible.bibleName;
 		});
 	},
 
@@ -38,7 +39,7 @@ var jsBible = {
 	{
 		if (bookLongName)
 		{
-			document.getElementById("header-title").innerHTML = bookLongName;
+			document.getElementById("header-title").innerHTML 	= bookLongName;
 		}
 
 		jsBible.putChapterLinks(book);
@@ -53,6 +54,7 @@ var jsBible = {
 			.className = "active";
 			
 		document.getElementById("title-chapter").innerHTML = chapter;
+		document.getElementsByTagName("title")[0].innerHTML = document.getElementById("header-title").innerHTML + " " + chapter;
 	},
 
 	"putChapterLinks": function(book)
