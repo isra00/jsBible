@@ -37,7 +37,7 @@
 
     <section id="bible-contents">
 
-        <nav class="lista-capitulos top" id="lista-capitulos"></nav>
+        <nav class="lista-capitulos" id="lista-capitulos"></nav>
 
         <article class="biblia">
 

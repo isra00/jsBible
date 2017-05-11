@@ -68,13 +68,13 @@ h2 {
 			font-size: 1.2em;
 		}
 
-#book-list, 
-#bible-contents {
+#book-list {
 	margin: 1em 2% 2em;
 }
 
 #bible-contents {
 	display: none;
+	margin: 1em 0 2em;
 }
 
 .indice {
@@ -103,6 +103,10 @@ h2 {
 			background: #eee;
 		}
 
+#lista-capitulos {
+	margin: 0 2%;
+}
+
 .biblia {
 	font-family: 'Garamond', serif;
 	font-size: 1.2em;
@@ -114,22 +118,20 @@ h2 {
 		line-height: 120%;
 	}
 
-	.biblia .verse {
-		margin: .1em 0;
-		padding: .1em;
-		margin: auto;
-	}
-
 	#verse-list {
 		list-style: none;
 		margin: 0;
 		padding: 0;
+		line-height: 1.7rem;
 	}
-		.verse {
-			line-height: 140%;
-		}
 
+	.biblia .verse {
+		margin: .1em 0;
+		padding: .1em 2% .1em 6px;
+		border-left: 4px solid white;
+	}
 		.verse:hover {
+			border-left: 4px solid silver;
 			background: #f6f6f6;
 		}
 
@@ -138,6 +140,7 @@ h2 {
 			font-family: arial, sans-serif;
 			font-size: .6em;
 			vertical-align: top;
+			line-height: 1.7rem;
 		}
 
 	/*.biblia .verse nav {
@@ -167,6 +170,7 @@ h2 {
 		padding: .2em .1em;
 		min-width: 25px;
 		display: inline-block;
+		font-size: 1.1em;
 	}
 	.lista-capitulos a:hover {
 		background: #eee;
@@ -205,7 +209,7 @@ footer {
 	text-align: center;
 	margin-top: 1em;
 }
-	footer a.top {
+	a.top {
 		background: #eee;
 		color: grey;
 		font-weight: bold;
@@ -214,7 +218,14 @@ footer {
 		text-transform: uppercase;
 		box-shadow: 1px 1px 1px silver;
 		font-size: 1.1em;
+		position: fixed;
+		right: .5em;
+		bottom: .5em;
+		opacity: .8;
 	}
+		a.top:hover {
+			opacity: 1;
+		}
 
 /*
  * GENÉRICO
