@@ -117,7 +117,7 @@ $bibleDefs['suv'] = [
 			["Hes", "Hesabu"],
 			["Kum", "Kumbukumbu la Torati"],
 		],
-		"Historical" => [
+		"Vitabu vya Historia" => [
 			["Yos", "Yoshua"],
 			["Amu", "Waamuzi"],
 			["Rut", "Ruthu"],
